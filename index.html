@@ -12,9 +12,23 @@
     </main>
 
     <div class="controls">
-      <div class="controls__btns">
-        <button id="jsMode">Fill</button><button id="save">Save</button>
+      <div class="controls__thick-range">
+        <input
+          type="range"
+          id="thickRange"
+          min="1"
+          max="10"
+          value="5"
+          step="1"
+        />
       </div>
+      <div class="controls__btns">
+        <button id="jsMode">Fill</button>
+        <button id="jsSave">Save</button>
+      </div>
+      <form class="controls__select_color">
+        <input type="color" id="jsSelectedColor" />
+      </form>
 
       <div id="jsColors" class="controls__colors">
         <!-- <div class="controls__color" style="background-color: black;"></div>
@@ -29,6 +43,9 @@
           class="controls__color"
           style="background-color: blueviolet;"
         ></div> -->
+      </div>
+      <div class="controls__btns">
+        <button id="js-update-palette">Update palette</button>
       </div>
     </div>
 
