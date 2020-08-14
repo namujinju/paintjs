@@ -92,7 +92,6 @@ function handleClickedColor(event) {
     const color = event.target.style.backgroundColor;
     ctx.strokeStyle = color;
     ctx.fillStyle = color;
-    rangeColor.value = color;
   }
 }
 
